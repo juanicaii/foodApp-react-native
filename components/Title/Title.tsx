@@ -1,11 +1,11 @@
 import React from 'react';
+
 import { View, Text, StyleSheet } from 'react-native';
-import { Divider } from 'react-native-elements';
-function HomeScreen() {
+
+function Title() {
   return (
-    <View style={styles.container}>
-      <Text>Restaurantes</Text>
-      <Divider />
+    <View>
+      <Text>{children}</Text>
     </View>
   );
 }
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
 });
-export default HomeScreen;
+export default Title;
